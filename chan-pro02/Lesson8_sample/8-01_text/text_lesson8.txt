@@ -1,0 +1,77 @@
+<!-- 全ページ共通 -->
+Photographer Hayato Nakagawa
+
+Home
+Profile
+Works
+Contact
+
+■ロゴ画像SP：logo_sp.svg
+■ロゴ画像PC：logo_pc.svg
+
+Photographer Hayato Nakagawa
+© MdN Corporation.
+
+<!-- トップページ -->
+■背景画像：bg_01.jpg
+
+<!-- Profileページ -->
+Profile - Photographer Hayato Nakagawa
+
+■背景画像：bg_01.jpg
+
+Profile
+中川 隼人
+Hayato Nakagawa
+
+1990年
+山梨県生まれ
+2010年
+写真家〇〇〇〇氏に師事
+2018年
+フリーランスPhotographerとして独立
+テキストサンプルです。親譲りの無鉄砲で子供のときから損ばかりしている。小学校にいる時分、学校の二階からふざけて飛び降り、周囲を慌てさせた。幸い大怪我はなかったが、なぜそんな無謀なことをしたと大目玉をくらった。
+
+<!-- Worksページ -->
+Works - Photographer Hayato Nakagawa
+
+■画像1：img/photo_img_01.jpg
+■画像1サムネイル：img/thumbnails/photo-thumb_01.jpg
+
+■画像2：img/photo_img_02.jpg
+■画像2サムネイル：img/thumbnails/photo-thumb_02.jpg
+
+■画像3：img/photo_img_03.jpg
+■画像3サムネイル：img/thumbnails/photo-thumb_03.jpg
+
+■画像4：img/photo_img_04.jpg
+■画像4サムネイル：img/thumbnails/photo-thumb_04.jpg
+
+■画像5：img/photo_img_05.jpg
+■画像5サムネイル：img/thumbnails/photo-thumb_05.jpg
+
+■画像6：img/photo_img_06.jpg
+■画像6サムネイル：img/thumbnails/photo-thumb_06.jpg
+
+■画像7：img/photo_img_07.jpg
+■画像7サムネイル：img/thumbnails/photo-thumb_07.jpg
+
+■画像8：img/photo_img_08.jpg
+■画像8サムネイル：img/thumbnails/photo-thumb_08.jpg
+
+■画像9：img/photo_img_09.jpg
+■画像9サムネイル：img/thumbnails/photo-thumb_09.jpg
+
+■画像10：img/photo_img_10.jpg
+■画像10サムネイル：img/thumbnails/photo-thumb_10.jpg
+
+■画像11：img/photo_img_11.jpg
+■画像11サムネイル：img/thumbnails/photo-thumb_11.jpg
+
+■画像12：img/photo_img_12.jpg
+■画像12サムネイル：img/thumbnails/photo-thumb_12.jpg
+
+
+
+
+

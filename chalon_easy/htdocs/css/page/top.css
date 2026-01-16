@@ -6,126 +6,126 @@ key
 .key_title {
     background-image: url(../../img/top_shop.jpg);
     background-size: cover;
-    margin-bottom: 160px;
+    margin-bottom: 80px;
 }
 
 .key_title .key_title_inner {
     height: 100vh;
+    align-items: center;
     display: flex;
-    justify-content: end;
-    transform: translateX(-80px);
+}
+
+.key_title .key_title_inner p {
+    width: 100%;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 
-.key_title .key_title_inner img {
-    width: 520px;
-    filter: drop-shadow(0 0 1px #000)
+@media screen and (min-width:769px) {
+    .key_title {
+        margin-bottom: 160px;
+    }
+
+    .key_title .key_title_inner {
+        justify-content: center;
+    }
+
+    .key_title .key_title_inner p {
+        width: 600px;
+        padding: 32px;
+    }
+
+    /*=========min-width:769px============*/
 }
 
 /*====================
 concept
 =====================*/
 .concept {
+    padding: 0 16px;
     text-align: center;
-    margin-bottom: 160px;
+    margin-bottom: 80px;
 }
 
 .concept p {
     margin-bottom: 16px;
 }
 
+@media screen and (min-width:960px) {
+    .concept {
+        margin-bottom: 160px;
+        padding: 0;
+    }
+
+    /*=========min-width:960px============*/
+}
+
+
 /*====================
 menu
 =====================*/
-/*flex*/
-/* .menu .menu_inner .menu_img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.menu .menu_inner .menu_img li {
-    width: 298px;
-    margin-bottom: 16px;
-} */
-
-.menu {
-    margin-bottom: 160px;
-}
-
 .menu .menu_inner .menu_img {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 16px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 .menu .menu_inner .menu_text {
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width:960px) {
+
+
+    .menu .menu_inner .menu_img {
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 80px;
+    }
+
+    .menu .menu_inner .menu_text {
+        margin-bottom: 80px;
+    }
+
+    /*=========min-width:960px============*/
 }
 
 /*====================
 lesson
 =====================*/
-.lesson {
-    margin-bottom: 160px;
-}
-
-.lesson .lesson_inner {
-    display: flex;
-    justify-content: space-between;
-}
-
-.lesson .lesson_inner .lesson_left_box,
-.lesson .lesson_inner .lesson_img {
-    width: 600px;
-}
-
-.lesson .lesson_inner .lesson_left_box .lesson_text {
+.lesson .lesson_box .lesson_img {
     margin-bottom: 40px;
 }
 
-.lesson .contents_title {
+.lesson .lesson_box .lesson_text {
     margin-bottom: 40px;
 }
 
-/*====================
-bg_placeholder
-=====================*/
-.bg_placeholder {
-    margin-bottom: 160px;
-    /* height: 600px; */
-    aspect-ratio: 16/9;
-    background-image: url(../../img/top_showcase.jpg);
-    background-size: cover;
-    /*iphoneは効かない*/
-    background-attachment: fixed;
+@media screen and (min-width:960px) {
+
+
+    .lesson .lesson_box .lesson_img {
+        margin-bottom: 0;
+    }
+
+    .lesson .lesson_box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 40px;
+    }
+
+    /*=========min-width:960px============*/
 }
 
 /*====================
 news
 =====================*/
-.news {
-    margin-bottom: 240px;
-}
-
 .news .news_inner dl {
-    display: flex;
+    margin-bottom: 24px;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    border-bottom: 2px dotted #f77237;
-    margin-bottom: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 8px;
-}
-
-.news .news_inner dl dt {
-    width: 20%;
-}
-
-.news .news_inner dl dd {
-    width: 80%;
 }

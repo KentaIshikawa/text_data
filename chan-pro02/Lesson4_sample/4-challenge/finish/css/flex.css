@@ -1,0 +1,19 @@
+@charset "utf-8";
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1em;
+}
+.card__item {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    flex-direction: row;
+  }
+  .card__item {
+    max-width: 360px;
+  }
+}

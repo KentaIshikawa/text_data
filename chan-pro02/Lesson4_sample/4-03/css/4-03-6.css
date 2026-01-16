@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/*PC用の設定*/
+@media screen and (min-width: 960px) {
+  .bg-hero {
+    position: relative;
+  }
+  .bg-info {
+    padding: 0;
+    width: 40%;
+    position: absolute;
+    top: 20%;
+    left: 120px;
+  }
+  .bg-hero h1 {
+    text-align: left;
+  }
+  .bg-hero p {
+    font-size: 1rem;
+  }
+}

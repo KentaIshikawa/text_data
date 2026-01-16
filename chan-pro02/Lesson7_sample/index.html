@@ -8,112 +8,99 @@
   <!-- 電話番号の自動リンクを無効にする -->
   <meta name="format-detection" content="telephone=no">
   <title>rental space MdN</title>
-  <meta name="description" content="レンタルスペースMdNの公式ホームページです。">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
+  <meta name="description" content="レンタルスペースMdNのホームページです。">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
+  <!-- headerブロック -->
   <header class="header">
-    <div class="header-logo-menu">
-      <div class="logo-area">
-        <a href="./index.html">
-          <img src="img/site-logo_bk.svg" alt="rental space MdN">
+    <div class="logo-area">
+        <a href="#top">
+          <img src="images/site-logo-w.svg" alt="rental space MdN">
         </a>
-      </div>
-      <nav class="sp-only">
-        <div class="gnav-toggle">
-          <input id="gnav-input" type="checkbox" class="gnav-hidden">
-          <label id="gnav-open" for="gnav-input"><span></span></label>
-          <label class="gnav-unshown" id="gnav-close" for="gnav-input"></label>
-          <div id="gnav-content">
-            <ul class="gnav-menu">
-              <li class="gnav-item">
-                <a href="#service">Service<br>サービス</a>
-              </li>
-              <li class="gnav-item">
-                <a href="#plan">Plan<br>プラン</a>
-              </li>
-              <li class="gnav-item">
-                <a href="#access">Access<br>アクセス</a>
-              </li>
-              <li class="gnav-item">
-                <a href="#contact">Contact<br>コンタクト</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <nav class="pc-only">
-        <ul class="gnav-menu">
-          <li class="gnav-item">
-            <a href="#service">Service<br>サービス</a>
-          </li>
-          <li class="gnav-item">
-            <a href="#plan">Plan<br>プラン</a>
-          </li>
-          <li class="gnav-item">
-            <a href="#access">Access<br>アクセス</a>
-          </li>
-          <li class="gnav-item">
-            <a href="#contact">Contact<br>コンタクト</a>
-          </li>
-        </ul>
-      </nav>
-
+    </div>
+    <div id="gnav-drawer">
+        <input id="nav-input" class="none" type="checkbox">
+        <label id="nav-input-open" for="nav-input"><span></span><span></span><span></span></label>
+        <label id="nav-input-close" for="nav-input"></label>
+        <nav class="header-navi">
+          <ul>
+            <li>
+              <a href="#service"><i class="fa-solid fa-angle-right"></i>Service</a>
+            </li>
+            <li>
+              <a href="#plan"><i class="fa-solid fa-angle-right"></i>Plan</a>
+            </li>
+            <li>
+              <a href="#access"><i class="fa-solid fa-angle-right"></i>Access</a>
+            </li>
+            <li>
+              <a href="#contact"><i class="fa-solid fa-angle-right"></i>Contact</a>
+            </li>
+          </ul>
+        </nav>
     </div>
   </header>
-
+  <!-- /headerブロック -->
+  <!-- mainブロック -->
   <main>
-    <section id="mv" class="mv-area">
-      <h1 class="mv-title">気軽に利用できる<br class="sp-only">レンタルスペース</h1>
+    <!-- hero -->
+    <section id="hero" class="hero-area">
+      <h1 class="hero-title">PCが利用できる<br class="sp-only">レンタルスペース</h1>
       <button type="button" onclick="location.href='#'" class="btn btn-reserve">Web予約はこちら</button>
     </section>
 
     <section id="info" class="info-area">
       <div class="inner info-content">
         <div class="info-txt">
-          <h2>利用人数や目的に<br class="sp-only">合わせて選べます</h2>
-          <p>レンタルスペースL7では、利用人数や利用目的に合わせてお部屋のタイプやご利用プランを選ぶことができます。少人数のミーティングから、100人規模のセミナーまで広く取り扱っております。<br>
+          <h2>ご利用人数や目的に<br class="sp-only">合わせて選べます。</h2>
+          <p>レンタルスペースMdNでは、利用人数や利用目的に合わせてお部屋のタイプやご利用プランを選ぶことができます。少人数のミーティングから、PCを利用したセミナーまで幅広く取り扱っております。<br>
             見学やご相談も承っておりますので、まずは、お気軽にお問い合わせください。</p>
         </div>
-        <img src="img/img-info.jpg" alt="レンタルスペースMdNロビーの写真">
+        <div class="info-img">
+          <img src="images/img-info.jpg" alt="レンタルスペースMdNロビーの写真">
+      </div>
       </div>
     </section>
 
+    <!-- service -->
     <section id="service" class="service-area">
       <div class="inner">
         <h2 class="h2-title">Service</h2>
         <h3>サービス</h3>
         <p class="txt-center">すべてのプランに標準でご利用いただけるサービスです。<br class="pc-only">
-          その他にも会議に必要な備品など数多く取り揃えておりますので申し込み時にお問い合わせください。</p>
+          その他にも会議に必要な備品など数多く取り揃えておりますので申し込みの際にお問い合わせください。</p>
       </div>
       <ul class="service-content">
         <li class="service-item">
-          <img src="img/service-icon_01.svg" alt="Free Wi-Fi">
+          <img src="images/service-icon_01.svg" alt="Free Wi-Fi">
           <h4>Free Wi-Fi</h4>
           <p>無料のWi-Fiを完備しております。ご自由にご利用ください。 </p>
         </li>
         <li class="service-item">
-          <img src="img/service-icon_02.svg" alt="収録サービス">
+          <img src="images/service-icon_02.svg" alt="収録サービス">
           <h4>収録サービス</h4>
           <p>会議内容を収録できます。ボイスレコーダーの貸し出しになります。</p>
         </li>
         <li class="service-item">
-          <img src="img/service-icon_03.svg" alt="ホワイトボード">
+          <img src="images/service-icon_03.svg" alt="ホワイトボード">
           <h4>ホワイトボード</h4>
-          <p>プリント可能なホワイトボードを各部屋に設置しています。</p>
+          <p>プリントアウトが可能なホワイトボードを各部屋に設置しています。</p>
         </li>
         <li class="service-item">
-          <img src="img/service-icon_04.svg" alt="ドリンクサービス">
+          <img src="images/service-icon_04.svg" alt="ドリンクサービス">
           <h4>ドリンクサービス</h4>
-          <p>ロビーのドリンクバーをご利用いただけます。</p>
+          <p>セミナー参加者は、ロビーのドリンクバーをご利用いただけます。</p>
         </li>
       </ul>
     </section>
 
+    <!-- plan -->
     <section id="plan" class="plan-area">
       <div class="inner">
         <h2 class="h2-title">Plan</h2>
@@ -121,47 +108,47 @@
         <p class="txt-center">ご利用人数や利用目的に合わせて、<br class="sp-only">様々なプランをご用意しております。</p>
         <ul class="plan-content">
           <li class="plan-item">
-            <img src="img/img-plan_01.jpg" alt="ミーティングプラン">
+            <img src="images/img-plan_01.png" alt="ミーティングプラン">
             <div class="plan-info">
               <h4 class="plan-title">ミーティングプラン</h4>
-              <p>少人数のミーティング向けプランです。全室、外が見える開放感あるお部屋で、30分からのご利用が可能です。</p>
+              <p>少人数から利用できるミーティング向けプランです。全室、外が見える開放感あるお部屋で、30分からのご利用が可能です。</p>
               <ul class="plan-list">
-                <li>2〜6人でのご利用</li>
-                <li>モニター</li>
+                <li>2〜16人程度でのご利用</li>
+                <li>プロジェクター完備</li>
               </ul>
-              <p class="plan-price">3,000円／30分〜</p>
+              <p class="plan-price">10,000円／30分〜</p>
             </div>
           </li>
           <li class="plan-item">
-            <img src="img/img-plan_02.jpg" alt="会議室プラン">
+            <img src="images/img-plan_02.png" alt="セミナープラン（Wnルーム）">
             <div class="plan-info">
-              <h4 class="plan-title">会議室プラン</h4>
+              <h4 class="plan-title">セミナープラン（Wnルーム）</h4>
               <p>PCの投影が出来るワイドモニター付きのプランです。プレゼンテーションやレッスンなどでもご利用いただけます。</p>
               <ul class="plan-list">
-                <li>4〜10人でのご利用</li>
+                <li>30人まで対応可能</li>
                 <li>50インチモニター</li>
               </ul>
-              <p class="plan-price">20,000円／60分〜</p>
+              <p class="plan-price">50,000円／60分〜</p>
             </div>
           </li>
           <li class="plan-item">
-            <img src="img/img-plan_03.jpg" alt="セミナープラン">
+            <img src="images/img-plan_03.png" alt="セミナープラン（Macルーム）">
             <div class="plan-info">
-              <h4 class="plan-title">セミナープラン</h4>
-              <p>大人數対応のプランです。パーティションで区切ることが出来ますので、利用人数でお部屋の大きさが変わります。</p>
+              <h4 class="plan-title">セミナープラン（Macルーム）</h4>
+              <p>大人数対応のプランです。パーティションで区切ることが出来ますので、利用人数でお部屋の大きさが変わります。</p>
               <ul class="plan-list">
-                <li>30〜100人でのご利用</li>
-                <li>プロジェクター</li>
+                <li>40人までの対応</li>
+                <li>50インチモニター</li>
               </ul>
               <p class="plan-price">60,000円／60分〜</p>
             </div>
           </li>
-
         </ul>
         <button type="button" onclick="location.href='#'" class="btn btn-reserve">Web予約はこちら</button>
       </div>
     </section>
 
+    <!-- access -->
     <section id="access" class="access-area">
       <div class="inner">
         <h2 class="h2-title">Access</h2>
@@ -173,7 +160,7 @@
               神保ビルの3Fが受付になります。<br>
               北口から商店街をまっすぐ抜け、市役所を左折。徒歩5分。</p>
           </div>
-          <img src="img/img-access.jpg" alt="神保ビル">
+          <img src="images/img-access.jpg" alt="神保ビル">
         </div>
       </div>
       <!--GoogleMap-->
@@ -184,17 +171,29 @@
     </section>
 
     <div class="pagetop">
-      <a href="#mv">ページトップ</a>
+      <a href="#top">ページトップ</a>
     </div>
   </main>
-  <footer class="foot-area">
+  <!-- /mainブロック -->
+  <!-- footerブロック -->
+  <footer id="contact" class="foot-area">
     <div class="inner">
       <div class="logo-area foot-logo">
-        <img src="img/site-logo_w.svg" alt="rental space MdN">
+        <img src="images/site-logo-w.svg" alt="rental space MdN">
       </div>
       <p class="txt-center">見学やセミナーのご相談など<br class="sp-only">お気軽にご連絡ください。</p>
       <address class="text-phone">TEL：<a href="tel:00-1234-5678">00-1234-5678</a></address>
+      <ul>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+    </ul>
     </div>
     <small class="foot-area_copy">&copy; MdN Corporation.</small>
   </footer>
-</body></html>
+  <!-- /footerブロック -->
+  <!-- fontawesomeでアイコンフォントの読み込み -->
+  <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/js/all.min.js"></script>
+  <!-- /fontawesomeでアイコンフォントの読み込み -->
+</body>
+</html>

@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+/* ボタン本体の調整 */
+.gnav-button {
+  height: 50px;
+  width: 60px;
+  background-color: transparent;
+  border: none;
+  position: relative;
+}
+
+/* 「メニュー」テキスト */
+.gnav-button span {
+  font-weight: bold;
+  color: #fff;
+  width: 60px;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ボタンの線 */
+.gnav-button::before, .gnav-button::after, .gnav-button span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 28px;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+.gnav-button::before {
+  top: 8px;
+}
+.gnav-button::after {
+  top: 24px;
+}
+.gnav-button span::before {
+  top: -14px;
+}
+
+/* アイコンのアニメーション */
+.is-open .gnav-button::before {
+  transform: rotate(45deg);
+  top: 16px;
+  left: 16px;
+}
+.is-open .gnav-button::after {
+  transform: rotate(-45deg);
+  top: 16px;
+  left: 16px;
+}
+.is-open .gnav-button span::before {
+  background-color: transparent;
+}

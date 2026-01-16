@@ -7,7 +7,7 @@ body {
     font-size: 16px;
     line-height: 1.75;
     color: #44190c;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "Osaka", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
 a {
@@ -16,9 +16,13 @@ a {
 }
 
 .contents_title {
+    display: block;
+    margin-bottom: 40px;
+}
+
+.contents_title img {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 80px;
 }
 
 .center {
@@ -27,10 +31,16 @@ a {
     margin-right: auto;
 }
 
+.section_box {
+    margin-bottom: 80px;
+    padding: 0 16px;
+}
+
 .btn {
     border: 1px solid #f77237;
     display: block;
-    width: 350px;
+    max-width: 350px;
+    width: 80%;
     line-height: 90px;
     text-align: center;
     margin-left: auto;
@@ -38,10 +48,26 @@ a {
     transition: 0.4s;
 }
 
-.btn:hover {
-    background-color: #f77237;
-    color: #fff;
+
+@media screen and (min-width:960px) {
+    .contents_title {
+        margin-bottom: 80px;
+    }
+
+    .section_box {
+        margin-bottom: 160px;
+    }
+
+    .btn:hover {
+        background-color: #f77237;
+        color: #fff;
+    }
+
+    /*=========min-width:960px============*/
 }
+
+
+
 
 /*=====================
 ヘッダー
@@ -70,12 +96,74 @@ header .header_inner h1 {
     width: 200px;
 }
 
-header .header_inner nav ul {
-    display: flex;
+header .header_inner .hum input {
+    display: none;
 }
 
-header .header_inner nav ul li {
-    margin-left: 16px;
+header .header_inner .hum label {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../../img/hum_off.png);
+}
+
+
+header .header_inner .hum input:checked+label {
+    background-image: url(../../img/hum_on.png);
+}
+
+header .header_inner nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(247, 113, 55, 0.6);
+    padding: 160px 20px 0;
+}
+
+header .header_inner nav ul li a {
+    display: block;
+    color: #fff;
+    font-size: 41px;
+    line-height: 2;
+    border-bottom: 1px dashed #fff;
+}
+
+header .header_inner input:checked+label+nav {
+    display: block;
+}
+
+
+@media screen and (min-width:960px) {
+    header .header_inner .hum label {
+        display: none;
+    }
+
+    header .header_inner .hum nav {
+        display: block;
+        position: static;
+        background-color: transparent;
+        width: auto;
+        height: auto;
+        padding: 0;
+    }
+
+    header .header_inner nav ul {
+        display: flex;
+        gap: 16px;
+    }
+
+    header .header_inner nav ul li a {
+        color: #f77237;
+        font-size: 16px;
+        border: none;
+    }
+
+    /*=========min-width:960px============*/
 }
 
 /*=====================

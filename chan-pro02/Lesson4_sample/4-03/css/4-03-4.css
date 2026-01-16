@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+/*タブレット端末用の設定*/
+@media screen and (min-width: 600px) {
+  .bg-hero {
+    background-image: url("../img/bg-hero-pc.jpg");
+  }
+  .bg-info {
+    padding: 10% 18%;
+  }
+  .bg-hero h1 {
+    font-size: 1.875rem;
+  }
+  .bg-hero p {
+    font-size: 1rem;
+  }
+}

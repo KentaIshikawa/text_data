@@ -20,14 +20,14 @@
 この場合、関数を定義する事なく記述できる分、楽にはなるが、
 関数に名前をつけられないので後で使い回せない。
 無名関数と呼ぶ。
-let btn = document.querySelector('#btn');
+const btn = document.querySelector('#btn');
 
 
 btn.addEventListener('click',()=>{
-    let html = document.createElement('p');
+    const html = document.createElement('p');
     html.innerHTML = 'クリックされた';
 
-    let target = document.querySelector('#content');
+    const target = document.querySelector('#content');
     target.appendChild(html);
 });
 htmlに要素を追加するときは、まず変数にdocument.createElement(タグ名)で要素を作成し、
@@ -44,14 +44,14 @@ htmlに要素を追加するときは、まず変数にdocument.createElement(�
         //btnにイベントとリスナー関数を設定
         //リスナー関数は、あらかじめ定義するのではなく、無名関数で指定
 
-            //追加されるp要素を作成
+        //追加されるp要素を作成
 
-            //作った要素に文字を書く
+        //作った要素に文字を書く
 
 
-            //要素を追加したい場所のHTMLを取得
+        //要素を追加したい場所のHTMLを取得
 
-            //要素を追加したい場所に、追加したい要素を出力
+        //要素を追加したい場所に、追加したい要素を出力
 
 
     </script>

@@ -32,31 +32,50 @@ if(check){
     console.log('変数checkには、trueが代入されているので必ず条件は成り立つ');
 }
 
-チェック用の変数を作り、if文を制御する際、trueとfalseを交互に入れ替えれば、
-一つのボタンを押すたびに処理が変える事ができる。（トグル処理と呼ぶ）
+const btn = document.querySelector('#btn');
 
-let check2 = true;
-let btn = document.querySelector('#btn');
-
-条件分岐のifとelseの処理に、check2の値にtrueとfalseを交互に入れる様に設定する
 btn.addEventListener('click', () => {
-    if (check2) {
-        check2 = false;
-        let target = document.querySelector('#text');
-        target.classList = 'show';
+    if (check) {
+        console.log('成り立つ');
+        check = false;
     } else {
-        check2 = true;
-        let target = document.querySelector('#text');
-        target.classList = '';
+        console.log('成り立たない');
+        check = true;
     }
 });
-クラスをつけるには、classListにクラス名を入れる。
-逆にクラスを外したいときは、クラス名に空の文字列を入れる。
+
+
+
+const color_btn = document.querySelector('#color');
+let color_check = true;
+color_btn.addEventListener('click', () => {
+    if (color_check) {
+        
+        const color_arr = ['青', '緑', '赤'];
+
+        const color_class = ['blue', 'green', 'red'];
+
+        const rand = Math.floor(Math.random() * color_arr.length);
+
+        const text = document.querySelector('#text');
+        text.classList = color_class[rand];
+
+        text.innerHTML = '今日のあなたのラッキーカラーは、' + color_arr[rand] + 'です！';
+
+        color_check = false;
+    } else {
+        alert('一回までです');
+    }
+});
+
+
 </pre>
     </div>
     <p class="btn"><button id="btn">ボタン</button></p>
+    <p class="btn"><button id="color">ラッキーカラー</button></p>
+
     <div class="inner">
-        <div id="text">ここの文字は、ボタンをクリックする事で、出たり消えたりします。</div>
+        <div id="text"></div>
     </div>
     <script>
         //変数checkにtrueを代入
@@ -64,22 +83,22 @@ btn.addEventListener('click', () => {
 
         //条件に変数checkを使って条件分岐させる
 
-        //変数check2にtrueを代入
 
 
-        //idがbtnの要素を変数に代入
+        //変数color_checkにtrueを代入
 
 
-        //btnにイベントとリスナー関数を設定
+        //idがcolorの要素を変数color_btnに代入
+
+
+        //color_btnにイベントとリスナー関数を設定
         //リスナー関数は無名関数
 
+        //条件にcolor_checkを使ったif文を書く
+        //条件が成り立つ方に、color_check=falseを代入
 
-            //条件にcheck2を使ったif文を書く
-            //条件が成り立つ方に、check2=falseを、
-            //条件が成り立たない方に、check2=trueを代入
+        //配列で色を格納
 
-                //クラスを付け加えるには、一度変数にhtml要素を代入し、
-                //変数名.classListに値を代入する
     </script>
 </body>
 

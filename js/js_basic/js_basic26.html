@@ -26,7 +26,7 @@ const btn_click = () => {
 もし、イベントを発生させる元のHTMLが読み込まれる前にjavascriptを実行してしまうと、動かなくなってしまうので、
 HTMLが読み込まれた後に処理が実行される様にscriptを制御する必要がある。
 
-let btn = document.querySelector('#btn');
+const btn = document.querySelector('#btn');
 
 HTMLが格納された変数に、イベントをセットする
 変数.addEventListener(イベント名,行いたい処理);

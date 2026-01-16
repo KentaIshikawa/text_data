@@ -5,10 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap"
-        rel="stylesheet">
+
     <link rel="stylesheet" href="css/common/reset.css">
     <link rel="stylesheet" href="css/common/common.css">
     <link rel="stylesheet" href="css/page/top.css">
@@ -20,21 +17,27 @@
             <h1 class="logo">
                 <a href="./"><img src="img/logo.svg" alt="洋菓子店CHALON"></a>
             </h1>
-            <nav>
-                <ul>
-                    <li><a href="#">当店について</a></li>
-                    <li><a href="#">メニュー</a></li>
-                    <li><a href="lesson/">お菓子教室</a></li>
-                    <li><a href="#">アクセス</a></li>
-                </ul>
-            </nav>
+            <div class="hum">
+                <input type="checkbox" class="hum_check" id="hum_check">
+                <label for="hum_check"></label>
+                <nav>
+                    <ul>
+                        <li><a href="#">当店について</a></li>
+                        <li><a href="#">メニュー</a></li>
+                        <li><a href="lesson/">お菓子教室</a></li>
+                        <li><a href="#">アクセス</a></li>
+                    </ul>
+                </nav>
+            </div>
+
         </div>
     </header>
     <div class="key_title">
         <div class="key_title_inner">
-            <img src="img/key_lead.svg" alt="">
+            <p><img src="img/key_lead.svg" alt=""></p>
         </div>
     </div>
+
     <div class="concept">
         <div class="concept_inner">
             <p>
@@ -68,9 +71,15 @@
             </p>
         </div>
     </div>
-    <section class="menu">
+
+    <section class="menu section_box">
         <div class="menu_inner center">
-            <h2><img class="contents_title" src="img/title_menu_pc.svg" alt="メニュー"></h2>
+            <h2>
+                <picture class="contents_title">
+                    <source srcset="img/title_menu_pc.svg" media="(min-width:960px)">
+                    <img src="img/title_menu_sp.svg" alt="メニュー">
+                </picture>
+            </h2>
             <ul class="menu_img">
                 <li><img src="img/menu_01.jpg" alt=""></li>
                 <li><img src="img/menu_02.jpg" alt=""></li>
@@ -94,54 +103,69 @@
             <a href="#" class="btn">メニュー一覧</a>
         </div>
     </section>
-    <section class="lesson">
+
+    <section class="lesson section_box">
         <div class="lesson_inner center">
-            <div class="lesson_left_box">
-                <h2><img class="contents_title" src="img/title_lesson_pc.svg" alt=""></h2>
-                <p class="lesson_text">
-                    CHALONでは、毎月第１・第２土曜日に、ご家族で参加できるお菓子教室を開催しています。<br>
-                    当店の職人が、一から丁寧にレクチャーしますので、小さいお子さんでも安心して参加していただけます。<br>
-                    家族の楽しい思い出作りに、是非御参加ください。
-                </p>
-                <a href="lesson/" class="btn">お菓子教室についてもっと見る</a>
+
+            <h2>
+                <picture class="contents_title">
+                    <source srcset="img/title_lesson_pc.svg" media="(min-width:960px)">
+                    <img src="img/title_lesson_sp.svg" alt="メニュー">
+                </picture>
+            </h2>
+            <div class="lesson_box">
+                <img class="lesson_img" src="img/top_lesson.jpg" alt="">
+                <div class="lesson_right_box">
+                    <p class="lesson_text">
+                        CHALONでは、毎月第１・第２土曜日に、ご家族で参加できるお菓子教室を開催しています。<br>
+                        当店の職人が、一から丁寧にレクチャーしますので、小さいお子さんでも安心して参加していただけます。<br>
+                        家族の楽しい思い出作りに、是非御参加ください。
+                    </p>
+                    <a href="lesson/" class="btn">お菓子教室についてもっと見る</a>
+                </div>
             </div>
-            <img class="lesson_img" src="img/top_lesson.jpg" alt="">
         </div>
     </section>
-    <div class="bg_placeholder"></div>
-    <section class="news">
+
+    <section class="news section_box">
         <div class="news_inner">
-            <h2><img src="img/title_news_pc.svg" alt="" class="contents_title"></h2>
+            <h2>
+                <picture class="contents_title">
+                    <source srcset="img/title_news_pc.svg" media="(min-width:960px)">
+                    <img src="img/title_news_sp.svg" alt="メニュー">
+                </picture>
+            </h2>
             <dl>
-                <dt><time datetime="2023-06-30">2023-06-30</time></dt>
+                <dt><time datetime="20yy-MM-DD">20yy-MM-DD</time></dt>
                 <dd><a href="#">お知らせテキストお知らせテキストお知らせテキストお知らせテキスト</a></dd>
             </dl>
             <dl>
-                <dt><time datetime="2023-06-30">2023-06-30</time></dt>
+                <dt><time datetime="20yy-MM-DD">20yy-MM-DD</time></dt>
                 <dd><a href="#">お知らせテキストお知らせテキストお知らせテキストお知らせテキスト</a></dd>
             </dl>
             <dl>
-                <dt><time datetime="2023-06-30">2023-06-30</time></dt>
+                <dt><time datetime="20yy-MM-DD">20yy-MM-DD</time></dt>
                 <dd><a href="#">お知らせテキストお知らせテキストお知らせテキストお知らせテキスト</a></dd>
             </dl>
             <dl>
-                <dt><time datetime="2023-06-30">2023-06-30</time></dt>
+                <dt><time datetime="20yy-MM-DD">20yy-MM-DD</time></dt>
                 <dd><a
                         href="#">お知らせテキストお知らせテキストお知らせテキストお知らせテキストお知らせテキストお知らせテキストお知らせテキストお知らせテキストお知らせテキストお知らせテキストお知らせテキストお知らせテキスト</a>
                 </dd>
             </dl>
             <dl>
-                <dt><time datetime="2023-06-30">2023-06-30</time></dt>
+                <dt><time datetime="20yy-MM-DD">20yy-MM-DD</time></dt>
                 <dd><a href="#">お知らせテキストお知らせテキストお知らせテキストお知らせテキストお知らせテキストお知らせテキストお知らせテキストお知らせテキスト</a></dd>
             </dl>
         </div>
     </section>
+
     <footer>
         <div class="footer_inner">
             <img class="footer_logo" src="img/logo_white.svg" alt="">
             <address>
                 TEL:03-1234-5678<br>
-                〒132-4567 東京都新宿区愛住町22 第三山田ビル1F
+                〒132-4567 東京都新宿区DDx123
             </address>
             <small>&copy;CHALON</small>
         </div>

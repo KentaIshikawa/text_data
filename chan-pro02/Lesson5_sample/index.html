@@ -2,69 +2,93 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>最短5日でダイバーデビュー！- MdN DIVE</title>
-  <meta name="description" content="MdN DIVEは千代田区にあるマンツーマンダイビングスクールです。5/31までWeb限定キャンペーンを実施中！">
+  <title>秋季限定！北海道3日間ツアー - MdN Tours</title>
+  <meta name="description" content="北海道の美しい景色と豊かな食文化を体験する3日間のツアー。特別なガイドとともに観光名所を巡り、地元の美味しい食事を楽しむことができます。">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-  <h1>
-    <img src="img/logo.png" alt="ロゴ：MdN DIVE">
-  </h1>
-</header>
+  <header>
+    <h1><img src="img/logo.svg" alt="ロゴ：MdN Tours"></h1>
+  </header>
 <main>
-  <div class="mv-area">
-    <img src="img/photo_01.jpg" class="mv-img" alt="この夏最後のキャンペーン！最短5日でダイバーデビュー！">
+  <div class="mainvisual">
+    <img src="img/photo_01.jpg" alt="北海道の美しい景色と豊かな食文化を体験する3日間のツアー。特別なガイドとともに観光名所を巡り、地元の美味しい食事を楽しむことができます。">
   </div>
   <section>
-    <div class="section-inner">
+    <div class="inner">
       <h2>Web限定キャンペーン中！</h2>
-      <p>5/31までにWebでお申し込みいただいた方限定で、特別価格を実施中です。MdN DIVEは安心のマンツーマンレッスン！お友達との参加も可能です。仲間と一緒にダイビングライセンスを取得して、世界中の海を楽しみましょう！</p>
+      <p>MdN Toursが開催する、北海道の美しい景色と豊かな食文化を体験する3日間のツアー。特別なガイドとともに、観光名所を巡り、地元の美味しい食事を楽しむことができます。</p>
+      <p><strong>特別オファー！</strong><br>このページからお申し込みいただいたお客様限定で、以下の特典をご提供いたします。</p>
+        <ul>
+          <li>ツアー料金10%オフ</li>
+          <li>ウェルカムギフト</li>
+          <li>特製ガイドブックプレゼント</li>
+        </ul>
+      <p>※キャンペーン期間：YYYY年MM月DD日からYYYY年MM月DD日まで</p>
     </div>
   </section>
   <section>
-    <div class="section-inner">
-      <h2>ライセンス取得までの流れ</h2>
+    <div class="inner">
+      <h2>ツアー日程</h2>
+      <h3>1日目：到着とウェルカムディナー</h3>
       <ol>
-        <li>学科講習（5-6時間）</li>
-        <li>プール実習（1-2日）</li>
-        <li>海洋実習（2日）</li>
-        <li>筆記試験</li>
+        <li>新千歳空港到着</li>
+        <li>ホテルチェックイン</li>
+        <li>ウェルカムディナー（北海道産の食材を使用した特別メニュー）</li>
       </ol>
+      <h3>2日目：富良野と美瑛</h3>
+      <ol>
+        <li>富良野ラベンダー畑（季節限定）</li>
+        <li>美瑛の青い池</li>
+        <li>ファーム富田での花畑散策</li>
+      </ol>
+      <h3>3日目：旭山動物園と帰路</h3>
+      <ol>
+        <li>旭山動物園見学</li>
+        <li>お土産タイム</li>
+        <li>新千歳空港へ移動、出発</li>
+      </ol>
+    </div>
+  </section>
+  <section>
+    <div class="inner">
+      <h2>料金と注意事項</h2>
+      <p>ツアー料金：XX,XXX円（税込）</p>
       <table>
         <tr>
           <th>料金に含まれるもの</th>
-          <td>教材費・実習費・器材レンタル代・ライセンス申請料</td>
+          <td>往復航空券、宿泊費、食事（朝食4回、昼食3回、夕食4回）、観光地入場料、ガイド料</td>
         </tr>
         <tr>
           <th>料金に含まれないもの</th>
-          <td>交通費・宿泊費・追加ダイブ費（希望者のみ）</td>
+          <td>個人的な支出、旅行保険</td>
         </tr>
       </table>
     </div>
   </section>
   <section>
-    <div class="section-inner">
-      <h2>申し込みフォーム</h2>
+    <div class="inner">
+      <h2>お申し込み方法</h2>
+      <p>下記のフォームに必要事項を入力し、「申し込む」ボタンをクリックしてください。お申し込み後、担当者より確認のご連絡を差し上げます。</p>
       <form action="program.php" method="post">
         <dl>
           <dt><label for="user-name">氏名</label></dt>
           <dd><input name="user-name" id="user-name" type="text"></dd>
           <dt><label for="user-email">メールアドレス</label></dt>
           <dd><input name="user-email" id="user-email" type="text"></dd>
-          <dt>水泳経験はありますか</dt>
-          <dd><input type="radio" name="swim" value="はい" id="swim-yes"><label for="swim-yes">はい</label>
-              <input type="radio" name="swim" value="いいえ" id="swim-no"><label for="swim-no">いいえ</label></dd>
+          <dt>アレルギーはありますか</dt>
+          <dd>
+            <input type="radio" name="allergy" value="はい" id="allergy-yes"><label for="allergy-yes">はい</label>
+            <input type="radio" name="allergy" value="いいえ" id="allergy-no"><label for="allergy-no">いいえ</label>
+          </dd>
         </dl>
-        <div class="form-submit">
-          <button name="submit" id="submit" type="submit">申し込む</button>
-        </div>
+        <button type="submit">申し込む</button>
       </form>
     </div>
   </section>
-  <div class="form-img-area">
-    <img src="img/photo_02.jpg" alt="写真：サンゴ礁と熱帯魚">
+  <div class="promotion">
+    <img src="img/photo_02.jpg" alt="写真：花と動物">
   </div>
 </main>
 <footer>
@@ -72,9 +96,9 @@
     〒101-0051<br>
     東京都千代田区神田神保町1丁目105<br>
     00-0000-0000<br>
-    株式会社MdN DIVE
+    株式会社MdN Tours
   </address>
-  <small>&copy; MdN Corporation.</small>
+  <small>© MdN Corporation.</small>
 </footer>
 </body>
 </html>
